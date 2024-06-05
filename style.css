@@ -203,6 +203,8 @@ utility > utility
 component > button
 ------------------------------
 */
+
+/* 標準ボタン */
 .c-button {
     display: inline-block;
     width: 100%;
@@ -219,6 +221,40 @@ component > button
 
 .c-button:focus,
 .c-button:hover {
+    background-color: #fefefe;
+    border-color: currentColor;
+    color: #385b41;
+}
+
+/* 矢印つきボタン */
+.c-button--arrow {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    padding: 20px 2em 20px 1.28em;
+    background-color: #385b41;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    color: #fefefe;
+    font-size: 16px;
+    text-align: center;
+    transition: .25s;
+}
+
+.c-button--arrow::after {
+    content: '\f061';
+    position: absolute;
+    top: 50%;
+    right: .83em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    transform: translateY(-50%);
+}
+
+
+.c-button--arrow:focus,
+.c-button--arrow:hover {
     background-color: #fefefe;
     border-color: currentColor;
     color: #385b41;
