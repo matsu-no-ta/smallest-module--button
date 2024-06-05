@@ -167,22 +167,6 @@ svg {
 }
 
 /*!
-foundation > base
-------------------------------
-*/
-body {
-    line-height: 1.5;
-    font-size: 14px;
-    color: var(--color-font-primary);
-    font-family: var(--font-family-base);
-}
-@media screen and (min-width: 768px) {
-    body {
-    font-size: 16px;
-    }
-}
-
-/*!
 utility > utility
 ------------------------------
 */
