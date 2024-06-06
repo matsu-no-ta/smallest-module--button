@@ -247,7 +247,7 @@ component > button
     color: var(--color-green);
 }
 
-/* 矢印つきボタン */
+/* 後方に矢印がつくボタン */
 .c-button--arrow {
     display: inline-block;
     width: 100%;
@@ -279,4 +279,32 @@ component > button
     background-color: var(--color-white);
     border-color: currentColor;
     color: var(--color-green);
+}
+
+/* 前方にアイコンがつくボタン */
+.before-icon-button {
+    position: relative;
+    display: inline-block;
+    padding: .2em .3em;
+    border: 1px solid currentColor;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    transition: .25s;
+}
+
+.before-icon-button:focus,
+.before-icon-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-green);
+}
+
+.before-icon-button::before {
+    display: inline-block;
+    margin-right: .5em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.before-icon-button--dl::before {
+    content: '\f019';
 }
