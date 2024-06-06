@@ -1,4 +1,13 @@
 /*!
+global > color
+------------------------------
+*/
+:root {
+    --color-green: #385b41;
+    --color-white: #fefefe;
+}
+
+/*!
 foundation > reset
 ------------------------------
 */
@@ -183,31 +192,59 @@ utility > utility
     margin: -1px !important;
 }
 
+div {
+    margin-top: 16px;
+}
+
 /*!
 component > button
 ------------------------------
 */
 
-/* 標準ボタン */
-.c-button {
+/* 標準ボタン-1 */
+.c-button-1 {
     display: inline-block;
     width: 100%;
     max-width: 300px;
     padding: 20px 10px;
-    background-color: #385b41;
+    background-color: var(--color-green);
     border: 2px solid transparent;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
-    color: #fefefe;
+    color: var(--color-white);
     font-size: 16px;
     text-align: center;
     transition: .25s;
 }
 
-.c-button:focus,
-.c-button:hover {
-    background-color: #fefefe;
+.c-button-1:focus,
+.c-button-1:hover {
+    background-color: var(--color-white);
     border-color: currentColor;
-    color: #385b41;
+    color: var(--color-green);
+}
+
+/* 標準ボタン-2 */
+.c-button-2 {
+    background-color: var(--color-green);
+    padding: 8px 16px;
+    color: var(--color-white);
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    font-size: 16px;
+}
+.c-button-2--size {
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.c-button-2:focus,
+.c-button-2:hover {
+    background-color: var(--color-white);
+    border-color: currentColor;
+    color: var(--color-green);
 }
 
 /* 矢印つきボタン */
@@ -217,10 +254,10 @@ component > button
     max-width: 300px;
     position: relative;
     padding: 20px 2em 20px 1.28em;
-    background-color: #385b41;
+    background-color: var(--color-green);
     border: 2px solid transparent;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
-    color: #fefefe;
+    color: var(--color-white);
     font-size: 16px;
     text-align: center;
     transition: .25s;
@@ -239,7 +276,7 @@ component > button
 
 .c-button--arrow:focus,
 .c-button--arrow:hover {
-    background-color: #fefefe;
+    background-color: var(--color-white);
     border-color: currentColor;
-    color: #385b41;
+    color: var(--color-green);
 }
