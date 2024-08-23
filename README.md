@@ -2,7 +2,7 @@
 
 # 最小モジュール --- ボタン
 
-表示：https://matsu-web.blog/portfolio.matsu-web.blog/smallest-module/button/index.html
+表示：https://portfolio.matsu-web.blog/smallest-module/button/index.html
 
 ## 連絡先
 [@matsunota_t](https://twitter.com/matsunota_t)
